@@ -94,6 +94,7 @@ def main():
     ax.patch.set_visible(False)
 
     xmin, xmax = np.inf, -np.inf
+    thru_max = 0.0
     for i, (config_name, filtername, *label) in enumerate(args.filter):
         etc = etcs[config_name]
         label = label[0] if label else filter_label(etc.instrument.name, filtername)
@@ -102,6 +103,7 @@ def main():
         thru = thru.value / 100.0
         passband = waves[thru > 0.01 * thru.max()]
         xmin, xmax = min(xmin, passband.min()), max(xmax, passband.max())
+        thru_max = max(thru_max, thru.max())
         colour = f"C{i}"
         ax_thru.plot(waves, thru, color=colour, ls=linestyles[config_name], alpha=0.8, lw=1.2)
         ax_thru.fill_between(waves, thru, color=colour, alpha=0.08)
@@ -112,10 +114,15 @@ def main():
     xmin, xmax = xmin - pad, xmax + pad
     margin = 0.03 * (xmax - xmin)
 
+    in_range = (spec_wave > xmin) & (spec_wave < xmax)
+    spec_top = spec_flux[in_range].max()
+
     ax.plot(spec_wave, spec_flux, color="k", lw=0.8, label=args.label)
     for text, xytext, tick in LINES:
         if not xmin + margin < xytext[0] < xmax - margin:
             continue
+        # labels are drawn upwards from xytext; two lines of text span roughly a factor of 1.8
+        spec_top = max(spec_top, xytext[1] * 1.8)
         if tick is None:
             ax.text(*xytext, text, ha="center", va="bottom", fontsize=9)
         else:
@@ -131,8 +138,10 @@ def main():
 
     ax.set_yscale("log")
     ax.set_xlim(xmin, xmax)
-    ax.set_ylim(0.5, 300)
-    ax_thru.set_ylim(0, 1)
+    # keep the top ~15% of each axis clear for the legend
+    ybot = 0.5
+    ax.set_ylim(ybot, ybot * (spec_top / ybot) ** (1 / 0.85))
+    ax_thru.set_ylim(0, (thru_max + 0.1) / 0.85)
     ax.set_xlabel("Wavelength (nm)")
     ax.set_ylabel("Relative Intensity")
     ax_thru.set_ylabel("Throughput")
