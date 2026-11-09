@@ -93,20 +93,29 @@ def main():
     ax.set_zorder(ax_thru.get_zorder() + 1)
     ax.patch.set_visible(False)
 
+    xmin, xmax = np.inf, -np.inf
     for i, (config_name, filtername, *label) in enumerate(args.filter):
         etc = etcs[config_name]
         label = label[0] if label else filter_label(etc.instrument.name, filtername)
         waves, thru = etc._efficiency_for_filter(filtername)
         waves = waves.to("nm").value
         thru = thru.value / 100.0
+        passband = waves[thru > 0.01 * thru.max()]
+        xmin, xmax = min(xmin, passband.min()), max(xmax, passband.max())
         colour = f"C{i}"
         ax_thru.plot(waves, thru, color=colour, ls=linestyles[config_name], alpha=0.8, lw=1.2)
         ax_thru.fill_between(waves, thru, color=colour, alpha=0.08)
         centre = np.sum(waves * thru) / np.sum(thru)
         ax_thru.text(centre, thru.max() + 0.04, label, color=colour, fontsize=14, ha="center")
 
+    pad = 0.05 * (xmax - xmin)
+    xmin, xmax = xmin - pad, xmax + pad
+    margin = 0.03 * (xmax - xmin)
+
     ax.plot(spec_wave, spec_flux, color="k", lw=0.8, label=args.label)
     for text, xytext, tick in LINES:
+        if not xmin + margin < xytext[0] < xmax - margin:
+            continue
         if tick is None:
             ax.text(*xytext, text, ha="center", va="bottom", fontsize=9)
         else:
@@ -121,7 +130,7 @@ def main():
             )
 
     ax.set_yscale("log")
-    ax.set_xlim(300, 830)
+    ax.set_xlim(xmin, xmax)
     ax.set_ylim(0.5, 300)
     ax_thru.set_ylim(0, 1)
     ax.set_xlabel("Wavelength (nm)")
