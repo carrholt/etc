@@ -127,7 +127,7 @@ def main():
     ax.set_xlabel("Wavelength (nm)")
     ax.set_ylabel("Relative Intensity")
     ax_thru.set_ylabel("Throughput")
-    ax.legend(loc="upper left", frameon=False)
+    ax.legend(loc="upper right", frameon=False)
     ax.minorticks_on()
 
     fig.tight_layout()
