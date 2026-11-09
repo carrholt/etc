@@ -3,15 +3,17 @@ comet spectrum. The emission-line labels and default legend are set up for the
 109P/Swift-Tuttle spectrum of Cochran (personal comm.; Fink & Hicks 1996).
 
 Usage:
-    python scripts/plot_spectrum_filters.py SPECTRUM -f INSTRUMENT FILTER [LABEL] [-f ...] [-o out.png]
+    python scripts/plot_spectrum_filters.py SPECTRUM -f INSTRUMENT FILTER [LABEL] [-f ...]
+        [-c COLOUR ...] [-o out.png]
 
 SPECTRUM is a text file of wavelength (nm) and relative intensity columns.
 INSTRUMENT is a config name from src/etc/data (with or without .toml), FILTER is
 one of the names in its filterlist, and an optional LABEL overrides the default
-"<instrument name> <filter>" label, e.g.
+"<instrument name> <filter>" label. Colours are assigned automatically unless
+given with -c, one per filter in the same order, e.g.
 
     python scripts/plot_spectrum_filters.py 109P.txt -f LSST_VRO LSST::g -f LSST_VRO LSST::r \\
-        -f ESO_VLT_FORS2 ESO::FORS::g -f ESO_VLT_FORS2 ESO::FORS::R
+        -c green red
 """
 
 import argparse
@@ -71,6 +73,12 @@ def main():
         metavar="INSTRUMENT FILTER [LABEL]",
         help="instrument config, filter to plot and optional label",
     )
+    parser.add_argument(
+        "-c",
+        "--colors",
+        nargs="+",
+        help="matplotlib colours for the filters, in the same order as -f (default: automatic)",
+    )
     parser.add_argument("-o", "--output", default="spectrum_filters.png")
     args = parser.parse_args()
 
@@ -78,6 +86,8 @@ def main():
         if len(f) not in (2, 3):
             parser.error(f"-f takes INSTRUMENT FILTER [LABEL], got {f}")
         f[0] = f[0].removesuffix(".toml")
+    if args.colors and len(args.colors) != len(args.filter):
+        parser.error(f"got {len(args.colors)} colours for {len(args.filter)} filters")
 
     etcs = {}
     for config_name in (f[0] for f in args.filter):
@@ -104,7 +114,7 @@ def main():
         passband = waves[thru > 0.01 * thru.max()]
         xmin, xmax = min(xmin, passband.min()), max(xmax, passband.max())
         thru_max = max(thru_max, thru.max())
-        colour = f"C{i}"
+        colour = args.colors[i] if args.colors else f"C{i}"
         ax_thru.plot(waves, thru, color=colour, ls=linestyles[config_name], alpha=0.8, lw=1.2)
         ax_thru.fill_between(waves, thru, color=colour, alpha=0.08)
         centre = np.sum(waves * thru) / np.sum(thru)
