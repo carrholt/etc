@@ -103,7 +103,7 @@ class ETC(object):
             "G": conf.gaiadr2_g_file,
         }
         band_name = band_mapping.get(self._convert_filtername(filtername), "johnson_v")
-        if band_name.startswith("http://svo"):
+        if band_name.startswith(("http://svo", "https://svo")):
             band = SpectralElement.from_file(band_name)
         else:
             band = SpectralElement.from_filter(band_name)

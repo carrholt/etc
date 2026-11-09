@@ -8,71 +8,71 @@ class Conf(ConfigNamespace):
     """Configuration parameters."""
 
     bessell_U_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=Generic/Bessell.U", "Bessell U"
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=Generic/Bessell.U", "Bessell U"
     )
     bessell_B_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=Generic/Bessell.B", "Bessell B"
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=Generic/Bessell.B", "Bessell B"
     )
     bessell_V_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=Generic/Bessell.V", "Bessell V"
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=Generic/Bessell.V", "Bessell V"
     )
     bessell_R_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=Generic/Bessell.R", "Bessell R"
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=Generic/Bessell.R", "Bessell R"
     )
     bessell_I_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=Generic/Bessell.I", "Bessell I"
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=Generic/Bessell.I", "Bessell I"
     )
 
     bessell_J_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=Generic/Bessell_JHKLM.J",
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=Generic/Bessell_JHKLM.J",
         "Bessell & Brett J",
     )
     bessell_H_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=Generic/Bessell_JHKLM.H",
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=Generic/Bessell_JHKLM.H",
         "Bessell & Brett H",
     )
     bessell_K_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=Generic/Bessell_JHKLM.K",
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=Generic/Bessell_JHKLM.K",
         "Bessell & Brett K",
     )
     bessell_L_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=Generic/Bessell_JHKLM.L",
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=Generic/Bessell_JHKLM.L",
         "Bessell & Brett L",
     )
     bessell_Lp_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=Generic/Bessell_JHKLM.Lp",
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=Generic/Bessell_JHKLM.Lp",
         "Bessell & Brett Lp",
     )
     bessell_M_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=Generic/Bessell_JHKLM.M",
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=Generic/Bessell_JHKLM.M",
         "Bessell & Brett M",
     )
 
     stromgren_u_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=Generic/Stromgren.u",
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=Generic/Stromgren.u",
         "Stromgren u",
     )
     stromgren_v_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=Generic/Stromgren.v",
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=Generic/Stromgren.v",
         "Stromgren v",
     )
     stromgren_b_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=Generic/Stromgren.b",
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=Generic/Stromgren.b",
         "Stromgren b",
     )
     stromgren_y_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=Generic/Stromgren.y",
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=Generic/Stromgren.y",
         "Stromgren y",
     )
 
     gaiadr2_g_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=GAIA/GAIA2.G", "Gaia DR2 G"
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=GAIA/GAIA2.G", "Gaia DR2 G"
     )
     gaiadr2_gbp_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=GAIA/GAIA2.Gbp", "Gaia DR2 G_BP"
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=GAIA/GAIA2.Gbp", "Gaia DR2 G_BP"
     )
     gaiadr2_grp_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=GAIA/GAIA2.Grp", "Gaia DR2 G_RP"
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=GAIA/GAIA2.Grp", "Gaia DR2 G_RP"
     )
 
     lco_u_file = ConfigItem("comp/lco/SDSS.up.txt", "LCO SDSS u")
@@ -81,23 +81,23 @@ class Conf(ConfigNamespace):
     lco_i_file = ConfigItem("comp/lco/SDSS.ip.txt", "LCO SDSS i")
     lco_zs_file = ConfigItem("comp/lco/PSTR-ZS-avg.txt", "LCO SDSS/PanSTARRS zs")
     lco_w_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=LasCumbres/LasCumbres.PS_w",
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=LasCumbres/LasCumbres.PS_w",
         "LCO PanSTARRS w",
     )
     lco_Y_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=LasCumbres/LasCumbres.PS_y",
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=LasCumbres/LasCumbres.PS_y",
         "LCO PanSTARRS Y",
     )
     lco_Halpha_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=LasCumbres/LasCumbres.Halpha",
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=LasCumbres/LasCumbres.Halpha",
         "LCO H alpha",
     )
     lco_Hbeta_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=LasCumbres/LasCumbres.Hbeta",
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=LasCumbres/LasCumbres.Hbeta",
         "LCO H beta",
     )
     lco_solar_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=LasCumbres/LasCumbres.Solar",
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=LasCumbres/LasCumbres.Solar",
         "LCO Solar (V+R)",
     )
 
@@ -122,7 +122,7 @@ class Conf(ConfigNamespace):
     lco_exop_file = ConfigItem("comp/lco/LCO_ADNP-EP-001.txt", "Astrodon Exoplanet BB")
 
     lco_UV_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=LasCumbres/LasCumbres.UV",
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=LasCumbres/LasCumbres.UV",
         "LCO Astrodon UV",
     )
     lco_U_file = ConfigItem("comp/lco/bssl-ux.txt", "LCO Bessell U")
@@ -132,71 +132,71 @@ class Conf(ConfigNamespace):
     lco_I_file = ConfigItem("comp/lco/bssl-ix.txt", "LCO Bessell I")
 
     wht_U_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=WHT/PFIP.RGO_U9",
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=WHT/PFIP.RGO_U9",
         "WHT/PFIP RGO U9",
     )
     wht_B_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=WHT/PFIP.Har_B",
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=WHT/PFIP.Har_B",
         "WHT/PFIP Harris B",
     )
     wht_V_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=WHT/PFIP.Har_V",
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=WHT/PFIP.Har_V",
         "WHT/PFIP Harris V",
     )
     wht_R_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=WHT/PFIP.Har_R",
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=WHT/PFIP.Har_R",
         "WHT/PFIP Harris R",
     )
     # This abruptly stops at 900nm and ~82% transmission causing issues.
-    #    wht_I_file = ConfigItem('http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=WHT/PFIP.Har_I', 'WHT/PFIP Harris I')
+    #    wht_I_file = ConfigItem('https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=WHT/PFIP.Har_I', 'WHT/PFIP Harris I')
     # This second version is just the glass from Schott, scaled from 3->4mm but
     # reproduces above very well and continues down to 0 transmission and so is
     # better behaved.
     wht_I_file = ConfigItem("comp/ing/WHT_Harris_I.dat", "WHT/PFIP Harris I")
 
     ctio_U_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=CTIO/SOI.bessel_U",
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=CTIO/SOI.bessel_U",
         "CTIO/SOI Bessell U",
     )
     ctio_B_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=CTIO/SOI.bessel_B",
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=CTIO/SOI.bessel_B",
         "CTIO/SOI Bessell B",
     )
     ctio_V_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=CTIO/SOI.bessel_V",
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=CTIO/SOI.bessel_V",
         "CTIO/SOI Bessell V",
     )
     ctio_R_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=CTIO/SOI.bessel_R",
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=CTIO/SOI.bessel_R",
         "CTIO/SOI Bessell R",
     )
     ctio_I_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=CTIO/SOI.bessel_I",
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=CTIO/SOI.bessel_I",
         "CTIO/SOI Bessell I",
     )
 
     ctio_u_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=CTIO/SOI.sdss_u",
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=CTIO/SOI.sdss_u",
         "CTIO/SOI SDSS u",
     )
     ctio_g_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=CTIO/SOI.sdss_g",
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=CTIO/SOI.sdss_g",
         "CTIO/SOI SDSS g",
     )
     ctio_r_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=CTIO/SOI.sdss_r",
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=CTIO/SOI.sdss_r",
         "CTIO/SOI SDSS r",
     )
     ctio_i_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=CTIO/SOI.sdss_i",
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=CTIO/SOI.sdss_i",
         "CTIO/SOI SDSS i",
     )
     ctio_z_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=CTIO/SOI.sdss_z",
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=CTIO/SOI.sdss_z",
         "CTIO/SOI SDSS z",
     )
     ctio_CN_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=CTIO/SOI.CN", "CTIO/SOI CN"
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=CTIO/SOI.CN", "CTIO/SOI CN"
     )
 
     soar_goodman_600l_file = ConfigItem(
@@ -211,74 +211,74 @@ class Conf(ConfigNamespace):
     lsst_y_file = ConfigItem("comp/lsst/filter_y.dat", "LSST y")
 
     eso_U_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=ESO/ESO.0877", "ESO/WFI U"
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=ESO/ESO.0877", "ESO/WFI U"
     )
     eso_B_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=ESO/ESO.0878", "ESO/WFI B"
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=ESO/ESO.0878", "ESO/WFI B"
     )
     eso_V_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=ESO/ESO.0843", "ESO/WFI V"
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=ESO/ESO.0843", "ESO/WFI V"
     )
     eso_Rc_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=ESO/ESO.0844", "ESO/WFI Rc"
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=ESO/ESO.0844", "ESO/WFI Rc"
     )
     eso_I_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=ESO/ESO.0879", "ESO/WFI I"
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=ESO/ESO.0879", "ESO/WFI I"
     )
 
     eso_EFOSC2_U_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=ESO/ESO.0640", "ESO/EFOSC2 U"
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=ESO/ESO.0640", "ESO/EFOSC2 U"
     )
     eso_EFOSC2_B_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=ESO/ESO.0639", "ESO/EFOSC2 B"
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=ESO/ESO.0639", "ESO/EFOSC2 B"
     )
     eso_EFOSC2_V_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=ESO/ESO.0641", "ESO/EFOSC2 V"
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=ESO/ESO.0641", "ESO/EFOSC2 V"
     )
     eso_EFOSC2_R_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=ESO/ESO.0642", "ESO/EFOSC2 R"
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=ESO/ESO.0642", "ESO/EFOSC2 R"
     )
     eso_EFOSC2_g_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=ESO/ESO.0782", "ESO/EFOSC2 g"
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=ESO/ESO.0782", "ESO/EFOSC2 g"
     )
     eso_EFOSC2_r_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=ESO/ESO.0784", "ESO/EFOSC2 r"
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=ESO/ESO.0784", "ESO/EFOSC2 r"
     )
     eso_EFOSC2_i_file = ConfigItem(
         "comp/eso/ESO_EFOSC2_i.dat",
         "ESO/EFOSC2 i",
         # The file below has duplicate entries, which breaks synphot
-        #        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=ESO/ESO.0705", "ESO/EFOSC2 i"
+        #        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=ESO/ESO.0705", "ESO/EFOSC2 i"
     )
     eso_EFOSC2_z_file = ConfigItem(
         "comp/eso/ESO_EFOSC2_z.dat",
         "ESO/EFOSC2 z",
         # The file below has duplicate entries, which breaks synphot
-        #        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=ESO/ESO.0623", "ESO/EFOSC2 z"
+        #        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=ESO/ESO.0623", "ESO/EFOSC2 z"
     )
 
     eso_uHIGH_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=ESO/ESO.1112", "ESO/FORS u_HIGH"
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=ESO/ESO.1112", "ESO/FORS u_HIGH"
     )
     eso_bHIGH_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=ESO/ESO.1113", "ESO/FORS b_HIGH"
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=ESO/ESO.1113", "ESO/FORS b_HIGH"
     )
     eso_vHIGH_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=ESO/ESO.1114", "ESO/FORS v_HIGH"
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=ESO/ESO.1114", "ESO/FORS v_HIGH"
     )
     eso_gHIGH_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=ESO/ESO.1115", "ESO/FORS g_HIGH"
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=ESO/ESO.1115", "ESO/FORS g_HIGH"
     )
     eso_fors_R_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=ESO/ESO.1076",
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=ESO/ESO.1076",
         "ESO/FORS Bessell R Special",
     )
     eso_fors_I_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=ESO/ESO.1077",
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=ESO/ESO.1077",
         "ESO/FORS Bessell I",
     )
     eso_fors_z_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=ESO/ESO.1078", "ESO/FORS Gunn z"
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=ESO/ESO.1078", "ESO/FORS Gunn z"
     )
     eso_vst_uprime_file = ConfigItem("comp/eso/sloan_u_prime.dat", "ESO Omegacam u'")
     eso_vst_gprime_file = ConfigItem("comp/eso/sloan_g_prime.dat", "ESO Omegacam g'")
@@ -304,18 +304,18 @@ class Conf(ConfigNamespace):
     gemini_gmosn_g_file = ConfigItem("comp/gemini/gmos_n_g_G0301.txt", "Gemini/GMOS-N g")
     gemini_gmosn_r_file = ConfigItem("comp/gemini/gmos_n_r_G0303.txt", "Gemini/GMOS-N r")
     # These don't go down to 0 at the ends of the bandpass, creating extrapolation problems
-    #    gemini_gmosn_g_file = ConfigItem('http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=Gemini/GMOS-N.g', 'Gemini/GMOS-N g')
-    #    gemini_gmosn_r_file = ConfigItem('http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=Gemini/GMOS-N.r', 'Gemini/GMOS-N r')
+    #    gemini_gmosn_g_file = ConfigItem('https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=Gemini/GMOS-N.g', 'Gemini/GMOS-N g')
+    #    gemini_gmosn_r_file = ConfigItem('https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=Gemini/GMOS-N.r', 'Gemini/GMOS-N r')
     gemini_gmosn_i_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=Gemini/GMOS-N.i",
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=Gemini/GMOS-N.i",
         "Gemini/GMOS-N i",
     )
     gemini_gmosn_z_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=Gemini/GMOS-N.z",
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=Gemini/GMOS-N.z",
         "Gemini/GMOS-N z",
     )
     gemini_gmosn_ri_file = ConfigItem(
-        "http://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=Gemini/GMOS-N.ri",
+        "https://svo2.cab.inta-csic.es/theory/fps/getdata.php?format=ascii&id=Gemini/GMOS-N.ri",
         "Gemini/GMOS-N ri",
     )
 
